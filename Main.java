@@ -1,54 +1,96 @@
-class Manusia {
-    
-    private String nama, jenisKelamin;
-    private int umur;
+interface Orang{
+    abstract void makan();
+    abstract void suara();
+    abstract void jalan();
+}
 
-    public Manusia(String nama, int umur, String jenisKelamin) {
+class Manusia {
+
+    private String nama, jenisKelamin;
+    int umur;
+
+    public Manusia(String nama, String jenisKelamin, int umur) {
         this.nama = nama;
-        this.umur = umur;
         this.jenisKelamin = jenisKelamin;
+        this.umur = umur;
+    }
+
+    public String getNama() {
+        return nama;
     }
 
     public void setNama(String nama) {
         this.nama = nama;
     }
 
-    String getNama() {
-        return nama;
+    public String getJenisKelamin() {
+        return jenisKelamin;
     }
 
-    public void setjenisKelamin(String kelamin) {
+    public void setJenisKelamin(String jenisKelamin) {
         this.jenisKelamin = jenisKelamin;
     }
 
-    String getjenisKelamin() {
-        return jenisKelamin;
+    public int getUmur() {
+        return umur;
     }
 
     public void setUmur(int umur) {
         this.umur = umur;
     }
+}
 
-    int getUmur() {
-        return umur;
+class Ayah extends Manusia implements Orang {
+
+    public Ayah(String nama, String jenisKelamin, int umur) {
+        super(nama, jenisKelamin, umur);
     }
 
-    void bernafas() {
-        System.out.println("bernafas");
+    @Override
+    public void makan() {
+        System.out.println("Ayah makan");
     }
 
-    void makan() {
-        System.out.println("makan ayam");
+    @Override
+    public void suara() {
+        System.out.println("Ayah bersuara");
     }
 
-    void berbicara() {
-        System.out.println("nyenyenye");
+    @Override
+    public void jalan() {
+        System.out.println("Ayah berjalan");
+    }
+}
+
+class Ibu extends Manusia implements Orang {
+
+    public Ibu(String nama, String jenisKelamin, int umur) {
+        super(nama, jenisKelamin, umur);
+    }
+
+    @Override
+    public void makan() {
+        System.out.println("Ibu makan");
+    }
+
+    @Override
+    public void suara() {
+        System.out.println("Ibu bersuara");
+    }
+
+    @Override
+    public void jalan() {
+        System.out.println("Ibu berjalan");
     }
 }
 
 class Main {
     public static void main(String[] args) {
-        Manusia anak = new Manusia("Deo", 22, "Laki-laki");
-        System.out.println(anak.getNama() + " " + anak.getUmur() + " " + anak.getjenisKelamin());
+        Ibu ibu = new Ibu("Dia", "P",30);
+
+        System.out.println(ibu.getNama());
+        System.out.println(ibu.getJenisKelamin());
+        System.out.println(ibu.getUmur());
+        ibu.jalan();
     }
 }

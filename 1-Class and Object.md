@@ -1,4 +1,4 @@
-# PBO
+# Class and Object
 
 Pemrograman berorientasi objek,
 
@@ -17,7 +17,6 @@ Suatu cetakan akan ditentukan apa-apa saja yang akan dimasukkan kedalam sebuah o
 Misalnya manusia, blueprintnya mis:
 1. Perilaku: bernafas, makan, bergerak, melihat, ... dst.
 2. Atribut: nama, umur, jenis kelamin, ... dsb.
-
 
 ```java
 class Manusia {
