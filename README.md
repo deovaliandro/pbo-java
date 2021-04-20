@@ -4,7 +4,7 @@ Main
 - [x] Class and Objek
 - [x] Constructor
 - [x] Encapsulation
-- [ ] Inheritance
+- [x] Inheritance
 - [x] Abstract class and Interface
 - [x] Polymorphism
 
