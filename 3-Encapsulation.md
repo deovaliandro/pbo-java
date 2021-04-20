@@ -2,7 +2,7 @@
 
 Dalam Java dikenal 4 macam modifier sebagai berikut. Apabila sebuah modifier tidak ditentukan maka secara otomatis compiler memberikan default modifier pada attribute atau method tersebut.
 1. Public
-Sebuah attribute atau method yang diberikan access modifier public artinya dapat diakses dari class yang berbeda. Demi keamanan sebuah aplikasi maka sering dihindari penggunaan public untuk setiap attribute yang ada dalam sebuah Class kecuali pada attribute yang perlu menggunakan access modifier public. Penggunaan public modifier biasanya untuk method-method yang bekerja sebagai transportasi data seperti Setter Method dan Getter.
+Sebuah attribute atau method yang diberikan access modifier public artinya dapat diakses dari class yang berbeda. Penggunaan public modifier biasanya untuk method-method yang bekerja sebagai transportasi data seperti Setter Method dan Getter.
 
 2. Protected
 Sebuah attribute atau method yang diberikan access modifier protected artinya dapat diakses dari class lain yang merupakan subclassnya. Access modifier ini biasa digunakan untuk attribute dalam sebuah Class yang menjadi superclass.
@@ -18,29 +18,39 @@ Default modifier yaitu modifier yang diberikan kepada method atau attribute yang
 Setter dan Getter adalah istilah untuk method dengan access modifier public yang digunakan untuk mengubah (Set) atau mengambil (Get) nilai suatu attribute private atau protected dalam sebuah Class.
 
 ```java
-class PhoneBook {
-    private String name;
-    private String phone;
-    private String address;
- 
-    public void setPhoneNumaber (String phone) {
-        this.phone = phone;
+class Manusia {
+
+    private String nama, jenisKelamin;
+    int umur;
+
+    public Manusia(String nama, String jenisKelamin, int umur) {
+        this.nama = nama;
+        this.jenisKelamin = jenisKelamin;
+        this.umur = umur;
     }
 
-    public void setName (String phone) {
-        this.name = name;
+    public String getNama() {
+        return nama;
     }
 
-    public String getAddress () {
-        return this.address;
+    public void setNama(String nama) {
+        this.nama = nama;
     }
 
-    public String getName () {
-        return this.name;
+    public String getJenisKelamin() {
+        return jenisKelamin;
     }
 
-    public String getPhone () {
-        return this.phone;
+    public void setJenisKelamin(String jenisKelamin) {
+        this.jenisKelamin = jenisKelamin;
+    }
+
+    public int getUmur() {
+        return umur;
+    }
+
+    public void setUmur(int umur) {
+        this.umur = umur;
     }
 }
 ```

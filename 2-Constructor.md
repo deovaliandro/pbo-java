@@ -6,78 +6,98 @@ Sebuah `class` tanpa konstruksi akan otomatis dibuatkan konstruksi oleh java.
 Constructor sangat mirip dengan method tetapi tidak memiliki return type dan nama constructor harus sama dengan nama classnya.
 
 ```java
-class Employee {
-    String name = “Karina”;
-    double salary = 1;
-    
-    public Employee () {
-        name = “Shelena”;
-        salary = 0;
+class Manusia {
+    int umur;
+    String nama, jenisKelamin;
+
+    void bernafas() {}
+    void makan() {}
+    void berbicara() {}
+
+    // Ini constructor
+    Manusia () {
+        nama = "Nama saya ..";
+        umur = 21;
+        jenisKelamin = "L";
     }
-//...
 }
 ```
 
 Ketika dibuat sebuah objek dari class di atas dengan statement `Employee emp = new Employee();` maka nilai attribute `name = Shelena` dan nilai attribute `salary = 0`.
 
 ```java
-class Employee {
-    String name = “Karina”;
-    double salary = 1;
+class Manusia {
+    int umur;
+    String nama, jenisKelamin;
 
-    public Employee () {
-        name = “Shelena”;
-        salary = 0;
+    void bernafas() {}
+    void makan() {}
+    void berbicara() {}
+
+    // Ini constructor
+    Manusia () {
+        nama = "Nama saya ..";
+        umur = 21;
+        jenisKelamin = "L";
     }
 }
+
 public class Main {
-public static void main (String[] args) {
-    Employee emp = new Employee();
-        System.out.println(“Name = ”+ emp.name);
-        System.out.println(“Salary = ”+ emp.salary);
+    public static void main (String[] args) {
+        Manusia manusia = new Manusia();
+        System.out.println("Nama = "+ manusia.nama);
+        System.out.println("Umur = "+ manusia.umur);
+        System.out.println("Jenis Kelamin = "+ manusia.jenisKelamin);
     }
 }
 ```
 
 Sebuah class dapat memiliki lebih dari satu constructor tetapi nama constructor harus sama dengan nama class. Java memperbolehkan sebuah class memiliki banyak constructor dengan ketentuan:
+
 - Setiap Constructor memiliki jumlah parameter yang berbeda
 - Jumlah parameter boleh sama tetapi type data masing-masing parameternya harus berbeda
 - Apabila terdapat lebih dari satu constructor dalam class maka Constructor yang digunakan adalah constructor yang sesuai dengan ketika objek di-instansikan
 
 Contoh:
 ```java
-class Employee {
-    String name = "Karina";
-    double salary = 1;
-    public Employee (double salary) {
-        this.salary = salary;
+class Manusia {
+    int umur;
+    String nama, jenisKelamin;
+
+    void bernafas() {}
+    void makan() {}
+    void berbicara() {}
+
+    Manusia(String nama) {
+        this.nama = nama;
     }
 
-    public Employee (String name) {
-        this.name = name;
+    Manusia(String nama, int umur) {
+        this.nama = nama;
+        this.umur = umur;
     }
 
-    public Employee (String name, double salary) {
-        this.name = name;
-        this.salary = salary;
+    Manusia (String nama, int umur, String jenisKelamin) {
+        this.nama = nama;
+        this.umur = umur;
+        this.jenisKelamin = jenisKelamin;
     }
 }
 
 public class Main {
     public static void main (String[] args) {
-        Employee emp1 = new Employee(20);
-        Employee emp2 = new Employee(“Gussion”);
-        Employee emp3 = new Employee(“Lesley”);
-
-        System.out.println("Name1 = "+ emp1.name);
-        System.out.println("Name2 = "+ emp2.name);
-        System.out.println("Name3 = "+ emp3.name);
+        Manusia manusia1 = new Manusia("A", 22, "L");
+        Manusia manusia2 = new Manusia("B", 20);
+        Manusia manusia3 = new Manusia("C");       
+        System.out.println("Nama 1 = "+ manusia1.nama);
+        System.out.println("Nama 2 = "+ manusia2.nama);
+        System.out.println("Nama 3 = "+ manusia3.nama);
     }
 }
 
 // Output
-/*  Name1 = Karina
-*   Name2 = Shelena
-*   Name3 = Lesley
+/*  Nama 1 = A 
+*   Nama 2 = B
+*   Nama 3 = C
 */
 ```

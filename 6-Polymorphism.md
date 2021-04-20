@@ -2,6 +2,8 @@
 
 Polymorphism adalah kemampuan dari suatu objek untuk merepresentasikan satu bentuk ke dalam banyak bentuk. Penggunaan paling umum dari polymorphism pada OOP terjadi ketika reference superclass digunakan untuk merujuk ke inheritance objek class.
 
+Method ini menggunakan override yang dituliskan dalam bentuk keyword `@Override`.
+
 ```java
 //Superclass
 public class Manusia {
