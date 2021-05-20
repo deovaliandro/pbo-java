@@ -5,7 +5,10 @@ Pemrograman berorientasi objek,
 - berorientasi = disepertikan
 - objek = manusia, hewan, laptop, monitor, buku, keyboard
 
-## Objek
+Konsep dasar dari Pemrograman Berorientasi objek sendiri adalah menyatakan sebuah objek real kedalam bahasa bahasa pemrograman.
+
+Objek adalah hal, perkara, benda atau orang yang menjadi pokok pembicaraan (KBBI, 2018).
+Misalnya seorang manusi, seekor kucing, seekor anjing atau benda lain, misalnya sebuah kursi. Itu adalah sebuah objek.
 
 Memiliki:
 1. Perilaku, mis: manusia memiliki sifat duduk, bicara, makan, ... dsb.
@@ -13,6 +16,8 @@ Memiliki:
 
 Setiap objek memiliki blueprint atau cetakan, digunakan untuk membuat objek.
 Suatu cetakan akan ditentukan apa-apa saja yang akan dimasukkan kedalam sebuah objek.
+
+> Class adalah blueprint dari objek.
 
 Misalnya manusia, blueprintnya mis:
 1. Perilaku: bernafas, makan, bergerak, melihat, ... dst.
