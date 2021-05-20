@@ -54,9 +54,9 @@ public class Main {
 
 Sebuah class dapat memiliki lebih dari satu constructor tetapi nama constructor harus sama dengan nama class. Java memperbolehkan sebuah class memiliki banyak constructor dengan ketentuan:
 
-- Setiap Constructor memiliki jumlah parameter yang berbeda
-- Jumlah parameter boleh sama tetapi type data masing-masing parameternya harus berbeda
-- Apabila terdapat lebih dari satu constructor dalam class maka Constructor yang digunakan adalah constructor yang sesuai dengan ketika objek di-instansikan
+- Setiap Constructor memiliki jumlah parameter yang berbeda,
+- Jumlah parameter boleh sama tetapi type data masing-masing parameternya harus berbeda,
+- Apabila terdapat lebih dari satu constructor dalam class maka Constructor yang digunakan adalah constructor yang sesuai dengan ketika objek di-instansikan.
 
 Contoh:
 ```java
