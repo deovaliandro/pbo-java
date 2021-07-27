@@ -11,3 +11,6 @@ Main
 Additional
 - [ ] Thread
 - [ ] JavaFX
+
+Untuk menambahkan materi, silahkan klik fork di kanan atas.
+Atau dengan mengedit langsung di repo ini.
