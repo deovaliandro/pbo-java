@@ -2,6 +2,7 @@
 
 Main
 - [x] [Class and Objek](/0-Class%20and%20Object.md)
+  - [x] [Method](/0.0.Method.md)
 - [x] [Constructor](/1-Constructor.md)
 - [x] [Encapsulation](/2-Encapsulation.md)
 - [x] [Inheritance](/3-Inheritance.md)
