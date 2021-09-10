@@ -14,3 +14,10 @@ Additional
 
 Untuk menambahkan materi, silahkan klik fork di kanan atas.
 Atau dengan mengedit langsung di repo ini.
+
+Note:
+
+1. PascalCase
+2. camelCase
+3. snake_case
+4. kebab-case

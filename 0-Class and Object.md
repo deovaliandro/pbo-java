@@ -20,9 +20,30 @@ Setiap objek memiliki blueprint atau cetakan, digunakan untuk membuat objek.
 Suatu cetakan akan ditentukan apa-apa saja yang akan dimasukkan kedalam sebuah
 objek.
 
-> Class adalah blueprint dari objek.
+Di Java, semuanya dibungkus dengan sebuah `class`. `class` adalah core dari Java
+itu sendiri.
 
-Misalnya manusia, blueprintnya mis:
+> Class adalah blueprint dari objek dan objek adalah instance dari sebuah class.
+
+Aturan untuk `class` Java:
+1. `class` dapat memiliki `public` atau default (no modifier).
+2. Dapat berupa `abstract` atau `final` (`class` normal).
+3. Harus mempunyai keyword `class` dan harus diikuti nama `class` yang
+   berupa PascalCase.
+4. Dapat meng-extend hanya sebuah `parent class`. Secara default, meng-extend
+   class `Object`.
+5. Variabel dan method dibungkus didalam kurung kurawal (`{}`).
+
+Bentuk umum:
+
+```java
+class  ClassName {
+     field;
+     method;
+}
+```
+
+Misalnya seorang manusia manusia, blueprintnya misalnya:
 1. Perilaku: bernafas, makan, bergerak, melihat, ... dst.
 2. Atribut: nama, umur, jenis kelamin, ... dsb.
 
@@ -46,6 +67,9 @@ Manusia deo = new Manusia();
 
 maka akan muncul sebuah objek baru, dengan nama objek `deo`, dan memiliki nama,
 umur, jenis kelamin, bernafas, dll.
+
+Perintah `new` adalah sebuah keyword untuk mengalokasikan memory untuk object
+tersebut.
 
 Tapi, itu belum diisi, sehingga defaultnya nilainya `0`/`null`/`false`, kita
 dapat mengisinya dengan menggunakan perintah:
