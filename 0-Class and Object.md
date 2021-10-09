@@ -1,3 +1,9 @@
+================================================================================
+title       : Class dan Object
+author      : Deo Valiandro. M
+signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
+================================================================================
+
 # Class and Object
 
 Konsep dasar dari Pemrograman Berorientasi objek sendiri adalah menyatakan
