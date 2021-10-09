@@ -1,20 +1,25 @@
 # Class and Object
 
-Pemrograman berorientasi objek,
-
-- berorientasi = disepertikan
-- objek = manusia, hewan, laptop, monitor, buku, keyboard
-
 Konsep dasar dari Pemrograman Berorientasi objek sendiri adalah menyatakan
 sebuah objek real kedalam bahasa bahasa pemrograman.
 
+## Objek (object)
+
 Objek adalah hal, perkara, benda atau orang yang menjadi pokok pembicaraan
-(KBBI, 2018). Misalnya seorang manusi, seekor kucing, seekor anjing atau benda
+(KBBI, 2018). Misalnya seorang manusia, seekor kucing, seekor anjing atau benda
 lain, misalnya sebuah kursi. Itu adalah sebuah objek.
 
-Memiliki:
-1. Perilaku, mis: manusia memiliki sifat duduk, bicara, makan, ... dsb.
-2. Atribut, mis: manusia memiliki nama, umur, jenis kelamin, ... dsb.
+Nah, setiap objek pasti memiliki identitas atau atribut, misalnya seorang manusia memiliki identitan atau atribut nama, umur, tinggi, berat dan berbagai identitas lainnya.
+
+Selain itu, sebuah objek juga pasti memiliki tingka laku, misalnya seorang manusia bisa makan, tidur, berjalan, bermain, koding dan berbagai kegiatan aktivitas lainnya.
+
+Sebuah objek dalam PBO juga demikian, objek tersebut akan memiliki sifat/atrribute dan perilaku/behaviour.
+
+Sifat/atribut yang dimaksud di PBO adalah sesuatu yang memiliki nilai, seperti ukuran, warna, berat, keterangan, dan semacamnya.
+
+Sedangkan tingkah laku/behaviour adalah kumpulan perintah yang melakukan suatu kegiatan spesifik.
+
+## Class
 
 Setiap objek memiliki blueprint atau cetakan, digunakan untuk membuat objek.
 Suatu cetakan akan ditentukan apa-apa saja yang akan dimasukkan kedalam sebuah
