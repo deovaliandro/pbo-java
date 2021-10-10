@@ -1,6 +1,7 @@
 ---
 title       : Class dan Object
 author      : Deo Valiandro. M
+date        : '2021-05-13'
 signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
 ---
 
@@ -81,7 +82,7 @@ class Manusia {
 }
 ```
 
-Untuk menggunakan cetakan ini untuk membuat manusia, maka dapat menggunakan
+Untuk menggunakan cetakan ini untuk seorang manusia, maka dapat menggunakan
 perintah:
 
 ```java
@@ -92,9 +93,9 @@ maka akan muncul sebuah objek baru, dengan nama objek `deo`, dan memiliki nama,
 umur, jenis kelamin, bernafas, dll.
 
 Setiap kali objek di-instance dari sebuah class, maka objek tersebut mewarisi
-atribut dan perilaku dari class yang di-intace-kan. Artinya objek *deo* yang
+atribut dan perilaku dari class yang di-intace-kan. Artinya objek `deo` yang
 telah dibuat juga mempunyai atribut nama, umur dan semua atribut dan perilaku
-yang ada di *class Manusia*.
+yang ada di `class Manusia`.
 
 Perintah `new` adalah sebuah keyword untuk mengalokasikan memory untuk object
 tersebut.
