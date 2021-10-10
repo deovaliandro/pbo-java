@@ -5,8 +5,6 @@ date        : '2021-05-14'
 signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
 ---
 
-# Constructor
-
 Konstruktor adalah method yang dijalankan ketika pertama kali sebuah objek
 dipanggil. Sebuah `class` tanpa konstruktor akan otomatis dibuatkan konstruktor
 `default` oleh java.

@@ -5,8 +5,6 @@ date        : '2021-05-13'
 signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
 ---
 
-# Class and Object
-
 Konsep dasar dari Pemrograman Berorientasi objek sendiri adalah menyatakan
 sebuah objek real kedalam bahasa bahasa pemrograman.
 

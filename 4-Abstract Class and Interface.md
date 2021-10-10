@@ -5,7 +5,7 @@ date        : '2021-05-16'
 signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
 ---
 
-# Abstract method vs Overriding
+## Abstract method vs Overriding
 
 Abstract method adalah method yang ditulis untuk diimplementasikan nantinya (harus diimplementasikan).
 Abstract method ini sebagai perjanjian bahwa method-method yang diberi tanda `abstract` merupakan method yang penting sehingga harus diimplementasikan.

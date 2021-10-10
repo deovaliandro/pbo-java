@@ -5,8 +5,6 @@ date        : '2021-05-15'
 signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
 ---
 
-# Encapsulation
-
 Encapsulation atau enkapsulasi adalah pembatasan akses terhadap suatu atribut,
 method atau konstruktor dalam suatu class. Enkapsulasi memastikan bahwa hanya
 program hanya dapat diakses oleh yang diberi izin saja.
