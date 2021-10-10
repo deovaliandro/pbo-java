@@ -69,6 +69,9 @@ Java memperbolehkan sebuah class memiliki banyak constructor dengan ketentuan:
 - Apabila terdapat lebih dari satu constructor dalam class maka Constructor yang
   digunakan adalah constructor yang sesuai dengan ketika objek di-instansikan.
 
+> Hal ini disebut dengan overloading, dimana beberapa method dapat memiliki nama
+> yang sama, namun dibedakan dengan paramater yang berbeda.
+
 Contoh:
 ```java
 class Manusia {
