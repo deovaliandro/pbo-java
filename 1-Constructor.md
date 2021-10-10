@@ -1,5 +1,5 @@
 ---
-title       : Class dan Object
+title       : Constructor
 author      : Deo Valiandro. M
 date        : '2021-05-14'
 signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
