@@ -258,3 +258,10 @@ class OverridingExample{
     }
 }
 ```
+
+Dimana terlihat, bahwa terdapat dua method yang sama, yang pertama method
+`myAge` di `superclass` dan method `myAge` yang kedua di `subclass`.
+
+Walaupun sudah panggil dengan menggunakan `super.myAge()`, namun ketika di
+eksekusi, hasil yang keluar adalah method yang terdapat pada `subclass`, yang
+artinya sudah ditimpa/overriding.
