@@ -252,7 +252,7 @@ class Deo extends Person{
 
 class OverridingExample{
     public static void main(String args[]){
-        Deo deo = new Deo("Deo", 1998, 170.0, 50.0);
+        Deo deo = new Deo("Deo", 2002, 170.0, 50.0);
         System.out.println("My name is " + deo.name);
         System.out.println("My ages is " + deo.myAge());
     }
