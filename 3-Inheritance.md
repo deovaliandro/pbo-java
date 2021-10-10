@@ -206,3 +206,55 @@ Mengapa multiple inheritance tidak didukung, karena:
 
 ![multiple-inheritance]
 (https://static.studytonight.com/java/images/multiple-inheritance-problem.jpg)
+
+
+## Overriding Method
+Dalam Java, sebuah method yang sama antara `superclass` dan `subclass`
+dibolehkan. Ketika sebuah method dengan nama yang sama dengan method yang ada
+pada `superclass` dibuat pada `subclass`, maka method yang ada di `superclass`
+ditimpa (`override`) dengan method yang baru.
+
+Sehingga, ketika method tersebut dipanggil pada `subclass`, maka yang akan
+dieksekusi adalah method yang ada pada `subclass`.
+
+Contohnya:
+
+```java
+class Person{
+    String name;
+    int yearOfBirth;
+    double height;
+    double weight;
+    int currentYear = 2020;
+
+    Person(String i, int j, double k, double l){
+        name = i;
+        yearOfBirth = j;
+        height = k;
+        weight = l;
+    }
+
+    int myAge(){
+        return currentYear - yearOfBirth;
+    }
+}
+
+class Deo extends Person{
+    Deo(String i, int j, double k, double l){
+        super(i,j,k,l);
+        super.myAge();
+    }
+
+    int myAge(){
+        return currentYear + yearOfBirth;
+    }
+}
+
+class OverridingExample{
+    public static void main(String args[]){
+        Deo deo = new Deo("Deo", 1998, 170.0, 50.0);
+        System.out.println("My name is " + deo.name);
+        System.out.println("My ages is " + deo.myAge());
+    }
+}
+```
