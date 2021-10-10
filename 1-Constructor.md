@@ -1,9 +1,11 @@
 # Constructor
 
-Konstruktor adalah fungsi yang dijalankan ketika pertama kali sebuah objek dipanggil.
-Sebuah `class` tanpa konstruksi akan otomatis dibuatkan konstruksi oleh java.
+Konstruktor adalah method yang dijalankan ketika pertama kali sebuah objek
+dipanggil. Sebuah `class` tanpa konstruktor akan otomatis dibuatkan konstruktor
+`default` oleh java.
 
-Constructor sangat mirip dengan method tetapi tidak memiliki return type dan nama constructor harus sama dengan nama classnya.
+Constructor adalah method tanpa return type dan nama methodnya sama dengan nama
+classnya.
 
 ```java
 class Manusia {
@@ -23,7 +25,9 @@ class Manusia {
 }
 ```
 
-Ketika dibuat sebuah objek dari class di atas dengan statement `Employee emp = new Employee();` maka nilai attribute `name = Shelena` dan nilai attribute `salary = 0`.
+Ketika dibuat sebuah objek dari class di atas dengan statement
+`Employee emp = new Employee();` maka nilai attribute `name = Shelena`
+dan nilai attribute `salary = 0`.
 
 ```java
 class Manusia {
@@ -52,11 +56,13 @@ public class Main {
 }
 ```
 
-Sebuah class dapat memiliki lebih dari satu constructor tetapi nama constructor harus sama dengan nama class. Java memperbolehkan sebuah class memiliki banyak constructor dengan ketentuan:
+Java memperbolehkan sebuah class memiliki banyak constructor dengan ketentuan:
 
 - Setiap Constructor memiliki jumlah parameter yang berbeda,
-- Jumlah parameter boleh sama tetapi type data masing-masing parameternya harus berbeda,
-- Apabila terdapat lebih dari satu constructor dalam class maka Constructor yang digunakan adalah constructor yang sesuai dengan ketika objek di-instansikan.
+- Jumlah parameter boleh sama tetapi type data masing-masing parameternya harus
+  berbeda,
+- Apabila terdapat lebih dari satu constructor dalam class maka Constructor yang
+  digunakan adalah constructor yang sesuai dengan ketika objek di-instansikan.
 
 Contoh:
 ```java
