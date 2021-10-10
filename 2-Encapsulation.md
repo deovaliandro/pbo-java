@@ -1,5 +1,5 @@
 ---
-title       : Class dan Object
+title       : Encapsulation
 author      : Deo Valiandro. M
 date        : '2021-05-15'
 signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
