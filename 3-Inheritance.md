@@ -1,3 +1,10 @@
+---
+title       : Inheritance
+author      : Deo Valiandro. M
+date        : '2021-05-16'
+signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
+---
+
 # Inheritance
 
 Inheritance adalah pewarian sifat. Class yang berisafat umum akan mewariskan sifatnya ke class yang bersifat khusus. Misalnya class `Manusia` akan memiliki class turunan seperti `Ayah`, `Ibu` dan `Anak`.
