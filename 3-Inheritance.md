@@ -5,17 +5,27 @@ date        : '2021-05-16'
 signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
 ---
 
-Inheritance adalah pewarian sifat. Class yang berisafat umum akan mewariskan sifatnya ke class yang bersifat khusus. Misalnya class `Manusia` akan memiliki class turunan seperti `Ayah`, `Ibu` dan `Anak`.
+Inheritance adalah pewarian sifat. Class yang berisafat umum akan mewariskan
+sifatnya ke class yang bersifat khusus. Misalnya class `Manusia` akan memiliki
+class turunan seperti `Ayah`, `Ibu` dan `Anak`.
 
-Ketika meng-extend sebuah class, maka semua member non-private termasuk variabel dan method akan diwariskan ke class tersebut.
+Ketika meng-extend sebuah class, maka semua member non-private termasuk variabel
+dan method akan diwariskan ke class tersebut.
 
-Class `Manusia` akan memiliki atribut dan method tersendiri, misalnya `nama`, `jenisKelamin` dan `umur`. Class `Ayah` misalnya akan memiliki method dan atribut dari class `Manusia` namun akan memiliki sifat-sifat dan atribut yang khusus, seperti `suara`, `gayaBerjalan`, `warnaKulit`, dsb.
+Class `Manusia` akan memiliki atribut dan method tersendiri, misalnya `nama`,
+`jenisKelamin` dan `umur`. Class `Ayah` misalnya akan memiliki method dan
+atribut dari class `Manusia` namun akan memiliki sifat-sifat dan atribut yang
+khusus, seperti `suara`, `gayaBerjalan`, `warnaKulit`, dsb.
 
-Untuk mewariskan sifat, digunakan keyword `extend`, dan untuk memanggil atribut dan method dari class induk, menggunakan keyword `super`. Keyword yang kedua adalah `implements` untuk inheritance/mewariskan dari sebuah interface.
+Untuk mewariskan sifat, digunakan keyword `extend`, dan untuk memanggil atribut
+dan method dari class induk, menggunakan keyword `super`. Keyword yang kedua
+adalah `implements` untuk inheritance/mewariskan dari sebuah interface.
 
-![Inheritance](https://static.studytonight.com/java/images/inheritance-in-java.jpg)
+![Inheritance]
+(https://static.studytonight.com/java/images/inheritance-in-java.jpg)
 
-Keyword `super` dapat digunakan untuk memanggil property di class parent, bahkan bisa memanggil constructor class parent.
+Keyword `super` dapat digunakan untuk memanggil property di class parent, bahkan
+bisa memanggil constructor class parent.
 
 Misalnya:
 
@@ -83,9 +93,12 @@ class Ayah extends Manusia implements Orang {
 
 Keuntungan dari inheritance adalah:
 1. Reusability dari code, kita tidak perlu menulis kode berulang-ulang.
-2. Mendukung polimorphisme dengan adanya method overriding (dibahas pada bab polimorphisme)
+2. Mendukung polimorphisme dengan adanya method overriding (dibahas pada bab
+   polimorphisme)
 
-Sedangkan kerugiannya adalah class parent dan child akan memiliki kesamaan identik, sehingga apabila terjadi perubahan di class parent, maka akan otomatis mengubah juga class child. Hal ini membuat adanya saling ketergantungan.
+Sedangkan kerugiannya adalah class parent dan child akan memiliki kesamaan
+identik, sehingga apabila terjadi perubahan di class parent, maka akan otomatis
+mengubah juga class child. Hal ini membuat adanya saling ketergantungan.
 
 
 ## Jenis Inheritance
@@ -95,9 +108,11 @@ Java hanya mendukung 3 jenis inheritance berikut:
 2. Multilevel inheritance
 3. Heirarchical inheritance
 
-Java tidak mendukung multiple inheritance dengan alasan keamanan dari masalah `Deadly Diamond of Death`.
+Java tidak mendukung multiple inheritance dengan alasan keamanan dari masalah
+`Deadly Diamond of Death`.
 
-![inheritance-in-java](https://static.studytonight.com/java/images/types-of-inheritance.png)
+![inheritance-in-java]
+(https://static.studytonight.com/java/images/types-of-inheritance.png)
 
 ### Single inheritance
 
@@ -122,7 +137,8 @@ public class B extends A{
 
 ### Multilevel Inheritance
 
-Ini misalnya pada sebuah class C extends class B, lalu class B extends class A. Misalnya:
+Ini misalnya pada sebuah class C extends class B, lalu class B extends class A.
+Misalnya:
 
 ```java
 class A{
@@ -151,7 +167,8 @@ public class C extends B{
 
 ### Hierarchical Inheritance
 
-Ini terjadi jika ada dua class memiliki satu parent class yang sama. Misalnya class B dan class C extends class A. Contohnya:
+Ini terjadi jika ada dua class memiliki satu parent class yang sama. Misalnya
+class B dan class C extends class A. Contohnya:
 
 ```java
 class A{
@@ -180,10 +197,12 @@ public class C extends A{
 
 ### Multiple Inheritance [tidak didukung Java]
 
-Multiple inheritance adalah inheritance sebuah class, misalnya class C yang mempunyai 2 buah parent, misalnya class B dan class A.
+Multiple inheritance adalah inheritance sebuah class, misalnya class C yang
+mempunyai 2 buah parent, misalnya class B dan class A.
 
 Mengapa multiple inheritance tidak didukung, karena:
 1. Untuk menghilangkan ambiguitas,
 2. Untuk mempermudah review code dan clear design.
 
-![multiple-inheritance](https://static.studytonight.com/java/images/multiple-inheritance-problem.jpg)
+![multiple-inheritance]
+(https://static.studytonight.com/java/images/multiple-inheritance-problem.jpg)
