@@ -1,8 +1,7 @@
 ---
-title       : Constructor
-author      : Deo Valiandro. M
-date        : '2021-05-14'
-signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
+title: Constructor
+author: "@deovaliandro"
+layout: default
 ---
 
 Konstruktor adalah method yang dijalankan ketika pertama kali sebuah objek

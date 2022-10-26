@@ -1,8 +1,7 @@
 ---
-title       : Abstract Class dan Interface
-author      : Deo Valiandro. M
-date        : '2021-05-16'
-signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
+title: Abstract Class dan Interface
+author: "@deovaliandro" 
+layout: default
 ---
 
 ## Abstract method vs Overriding

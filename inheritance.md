@@ -1,8 +1,7 @@
 ---
-title       : Inheritance
-author      : Deo Valiandro. M
-date        : '2021-05-16'
-signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
+title: Inheritance
+author: "@deovaliandro"
+layout: default
 ---
 
 Inheritance adalah pewarian sifat. Class yang berisafat umum akan mewariskan

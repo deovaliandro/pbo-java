@@ -1,8 +1,7 @@
 ---
-title       : Class dan Object
-author      : Deo Valiandro. M
-date        : '2021-05-13'
-signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
+title: Method 
+author: "@deovaliandro"
+layout: default
 ---
 
 Method adalah penggambaran suatu sifat dari sebuah objek.
